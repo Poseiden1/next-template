@@ -1,11 +1,12 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import { Icons } from "@/components/icons/icons"
-import { MainNav } from "@/components/header/main-nav"
-import { ThemeToggle } from "@/components/theme/theme-toggle"
-import { Twitter } from "lucide-react"
+import { siteConfig } from "@/config/site";
+import { buttonVariants } from "@/components/ui/button";
+import { Icons } from "@/components/icons/icons";
+import { MainNav } from "@/components/header/main-nav";
+import { ThemeToggle } from "@/components/theme/theme-toggle";
+import { Twitter } from "lucide-react";
+import LogoutButton from "../session/logout-button";
 
 export function SiteHeader() {
   return (
@@ -45,9 +46,10 @@ export function SiteHeader() {
               </div>
             </Link>
             <ThemeToggle />
+            <LogoutButton />
           </nav>
         </div>
       </div>
     </header>
-  )
+  );
 }
